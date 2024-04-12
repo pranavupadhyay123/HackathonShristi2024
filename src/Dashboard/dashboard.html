@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/Dashboard/style.css">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
   <title>Document</title>
 </head>
 
@@ -15,17 +15,12 @@
     <div class="app-header">
       <div class="app-header-left">
         <span class="app-icon"></span>
-        <p class="app-name">DASHBOARD</p>
-        <div id="search-container" style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
-          <input type="text" id="search-input" placeholder="Search..." style="width: 400px; padding: 8px; border-radius: 5px; border: 1px solid #ccc; outline: none;">
-          <button style="padding: 8px 15px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Search</button>
-          <label style="font-weight: bold;"><input type="checkbox" id="checkup-checkbox"> Check-Up</label>
-          <label style="font-weight: bold;"><input type="checkbox" id="information-checkbox"> Information</label>
-          <label style="font-weight: bold;"><input type="checkbox" id="foster-checkbox"> Froster</label>
-          <label style="font-weight: bold;"><input type="checkbox" id="volunteering-checkbox"> Volunteering</label>
-          <label style="font-weight: bold;"><input type="checkbox" id="adoption-checkbox"> Adoption</label>
-      </div>
-            
+        <p class="app-name">Portfolio</p>
+        <div id="search-container">
+          <input type="text" id="search-input" placeholder="Search..." style="width: 400px;">
+          <label><input type="checkbox" id="remote-checkbox"> Remote Jobs</label>
+          <label><input type="checkbox" id="fulltime-checkbox"> Full Time Jobs</label>
+        </div>        
       </div>
       <div class="app-header-right">
         <button class="mode-switch" title="Switch Theme">
@@ -53,7 +48,7 @@
         </button>
         <button class="profile-btn">
           <img src="https://assets.codepen.io/3306515/IMG_2025.jpg" />
-          <span>Test</span>
+          <span>Root User</span>
         </button>
       </div>
       <button class="messages-btn">
@@ -106,22 +101,22 @@
       </div>
       <div class="projects-section">
         <div class="projects-section-header">
-          <p>On-Going Work</p>
-          <p class="time">April, 12, 2024</p>
+          <p>Projects</p>
+          <p class="time">December, 12</p>
         </div>
         <div class="projects-section-line">
           <div class="projects-status">
             <div class="item-status">
               <span class="status-number">45</span>
-              <span class="status-type">Healed</span>
+              <span class="status-type">In Progress</span>
             </div>
             <div class="item-status">
               <span class="status-number">24</span>
-              <span class="status-type">Reported</span>
+              <span class="status-type">Upcoming</span>
             </div>
             <div class="item-status">
               <span class="status-number">62</span>
-              <span class="status-type">On Going surgery</span>
+              <span class="status-type">Total Projects</span>
             </div>
           </div>
           <div class="view-actions">
@@ -192,52 +187,51 @@
               
   
           <div id="job-list">
-            <div class="card" data-title="Data Analyst" data-type="remote">
-              <div class="job-title">Physical Examination</div>
-              <div class="job-details">
-                  <span>This involves checking the animal's overall appearance, body condition, skin, fur, eyes, ears, nose, mouth, teeth, limbs, and movement for any signs of injury, illness, or abnormalities.</span><br>
-                  <!-- <span>Location: Any</span><br>
-                  <span>Experience: 2+ years</span> -->
-              </div>
-              <button class="apply-btn">Apply</button>
-          </div>
-              <div class="card" data-title="Data Analyst" data-type="remote">
-                  <div class="job-title">Physical Examination</div>
+              <div class="card" data-title="Software Developer" data-type="fulltime">
+                  <div class="job-title">Software Developer</div>
                   <div class="job-details">
-                      <span>This involves checking the animal's overall appearance, body condition, skin, fur, eyes, ears, nose, mouth, teeth, limbs, and movement for any signs of injury, illness, or abnormalities.</span><br>
-                      <!-- <span>Location: Any</span><br>
-                      <span>Experience: 2+ years</span> -->
+                      <span>Type: Full Time</span><br>
+                      <span>Location: New York</span><br>
+                      <span>Experience: 3+ years</span>
+                  </div>
+                  <button class="apply-btn">Apply</button>
+              </div>
+              <div class="card" data-title="Data Analyst" data-type="remote">
+                  <div class="job-title">Data Analyst</div>
+                  <div class="job-details">
+                      <span>Type: Remote</span><br>
+                      <span>Location: Any</span><br>
+                      <span>Experience: 2+ years</span>
                   </div>
                   <button class="apply-btn">Apply</button>
               </div>
               <div class="card" data-title="UX Designer" data-type="fulltime">
-                <div class="job-title">Wildlife Conservation Specialist</div>
-                <div class="job-details">
-                    <span>Type: Full Time</span><br>
-                    <span>Location: Amazon Rainforest</span><br>
-                    <span>Experience: 7+ years in environmental science</span>
-                </div>
-                <button class="apply-btn">Apply</button>
-            </div>
-            
-              <div class="card" data-title="Graphic Designer" data-type="remote">
-                  <div class="job-title">Vaccinations</div>
+                  <div class="job-title">UX Designer</div>
                   <div class="job-details">
-                      <span>If the animal hasn't received vaccinations or there's uncertainty about its vaccination status, it may be vaccinated against common diseases such as rabies, parvovirus, distemper, etc</span><br>
-                      <!-- <span>Location: Any</span><br>
-                      <span>Experience: 2+ years</span> -->
+                      <span>Type: Full Time</span><br>
+                      <span>Location: San Francisco</span><br>
+                      <span>Experience: 5+ years</span>
+                  </div>
+                  <button class="apply-btn">Apply</button>
+              </div>
+              <div class="card" data-title="Graphic Designer" data-type="remote">
+                  <div class="job-title">Graphic Designer</div>
+                  <div class="job-details">
+                      <span>Type: Remote</span><br>
+                      <span>Location: Any</span><br>
+                      <span>Experience: 2+ years</span>
                   </div>
                   <button class="apply-btn">Apply</button>
               </div>
               <div class="card" data-title="Product Manager" data-type="fulltime">
-                <div class="job-title">Animal Checkup Technician</div>
-                <div class="job-details">
-                    <span>Location: Wildlife Sanctuary</span><br>
-                    <span>Experience: 5+ years in veterinary medicine</span>
-                </div>
-                <button class="apply-btn">Apply</button>
-            </div>
-            
+                  <div class="job-title">Product Manager</div>
+                  <div class="job-details">
+                      <span>Type: Full Time</span><br>
+                      <span>Location: Seattle</span><br>
+                      <span>Experience: 7+ years</span>
+                  </div>
+                  <button class="apply-btn">Apply</button>
+              </div>
           </div>
       </div>
   
@@ -257,14 +251,6 @@
                   saveAppliedJob(title);
               }
           }
-
-
-
-
-          // froster
-          
-
-
   
           // Save applied job to local storage
           function saveAppliedJob(title) {
@@ -323,15 +309,6 @@
             <line x1="9" y1="9" x2="15" y2="15" />
           </svg>
         </button>
-
-
-        <!-- chatbox -->
-        <!-- <div class="chat-container">
-          <div class="chat-box" id="chat-box"></div>
-          <input type="text" id="user-input" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
-          <button id="send-button">Send</button> -->
-
-
         <div class="projects-section-header">
           <p>Client Messages</p>
         </div>
@@ -444,30 +421,8 @@
               </p>
             </div>
           </div>
-          <!-- chatbox -->
-
-<div class="chat">
-  <div class="chat-title">
-    <h1>Fabio Ottaviani</h1>
-    <h2>Supah</h2>
-    <figure class="avatar">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/156381/profile/profile-80.jpg" />
-    </figure>
-  </div>
-  <div class="messages">
-    <div class="messages-content"></div>
-  </div>
-  <div class="message-box">
-    <textarea type="text" class="message-input" placeholder="Type message..."></textarea>
-    <button type="submit" class="message-submit">Send</button>
-  </div>
-
-</div>
-<div class="bg"></div>
         </div>
-        
       </div>
-      
     </div>
   </div>
   <script src="/Dashboard/script.js"></script>

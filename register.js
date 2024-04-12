@@ -79,8 +79,10 @@ app.use(express.static('public'));
 
 app.post('/donate', (req, res) => {
     const { frequency, amount } = req.body;
-    res.send('Donation successful! Thank you for your support.');
+    
+    res.sendFile(path.join(__dirname, 'src', 'donation', 'thank.html'));
 });
+
 
 // Route for handling login form submission
 app.post('/login', (req, res) => {
