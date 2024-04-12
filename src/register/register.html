@@ -2,238 +2,11 @@
 
 <head>
   <meta charset="UTF-8">
-
-
-  <link rel="apple-touch-icon" type="image/png"
-    href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
-
-  <meta name="apple-mobile-web-app-title" content="CodePen">
-
-  <link rel="shortcut icon" type="image/x-icon"
-    href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
-
-  <link rel="mask-icon" type="image/x-icon"
-    href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg"
-    color="#111">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="csrf-param" content="authenticity_token">
-  <meta name="csrf-token"
-    content="re+eKV7ig1XdMln6oVVhbBuINUI5TKVA8kVZOGb5fwhTRagklf07HUmbGlKOW1VGCcfEia6gjgs+UDu3jyZKdA==">
-
-  <title>Floating register page with bootstrap 4</title>
-  <link rel="stylesheet" media="screen"
-    href="https://cpwebassets.codepen.io/assets/fullpage/fullpage-a7751fce9f8bdda3329296b44cd901f541bfaa7c5417190fba49dc1cf6fd799f.css">
-  <link rel="stylesheet" media="all"
-    href="https://cpwebassets.codepen.io/assets/global/global-d8b7deadecbb651b037f99965f9eb78b0d4457c66b29753bd671969954a1cb61.css">
-  <link rel="stylesheet" media="screen" href="https://cpwebassets.codepen.io/assets/packs/css/everypage-6ef77c01.css">
-  <link rel="stylesheet" media="all"
-    href="https://cpwebassets.codepen.io/assets/page/page-95c27a818f775206d20d4cbc835e07093ad5041a87e923b2f89b49a6242676a9.css">
-  <link rel="stylesheet" media="all"
-    href="https://cpwebassets.codepen.io/assets/editor/editor-1c1e1bc9a9c19175444f3aa742f0ec1dee2998210a113bb12379a9ec9420f3c5.css">
-  <link rel="dns-prefetch" href="https://apc.codepen.io">
-  <style type="text/css">
-    @font-face {
-      font-family: Lato;
-      font-style: normal;
-      font-weight: 400;
-      src: url(/cf-fonts/s/lato/5.0.18/latin/400/normal.woff2);
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: Lato;
-      font-style: normal;
-      font-weight: 400;
-      src: url(/cf-fonts/s/lato/5.0.18/latin-ext/400/normal.woff2);
-      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: Lato;
-      font-style: normal;
-      font-weight: 700;
-      src: url(/cf-fonts/s/lato/5.0.18/latin/700/normal.woff2);
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: Lato;
-      font-style: normal;
-      font-weight: 700;
-      src: url(/cf-fonts/s/lato/5.0.18/latin-ext/700/normal.woff2);
-      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: Lato;
-      font-style: normal;
-      font-weight: 900;
-      src: url(/cf-fonts/s/lato/5.0.18/latin-ext/900/normal.woff2);
-      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: Lato;
-      font-style: normal;
-      font-weight: 900;
-      src: url(/cf-fonts/s/lato/5.0.18/latin/900/normal.woff2);
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: Lato;
-      font-style: italic;
-      font-weight: 400;
-      src: url(/cf-fonts/s/lato/5.0.18/latin/400/italic.woff2);
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: Lato;
-      font-style: italic;
-      font-weight: 400;
-      src: url(/cf-fonts/s/lato/5.0.18/latin-ext/400/italic.woff2);
-      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      font-display: swap;
-    }
-  </style>
-  <meta name="twitter:title" content="Floating register page with bootstrap 4">
-  <meta name="twitter:description" content="...">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://shots.codepen.io/username/pen/eYNBzZQ-800.jpg?version=1582297038">
-  <meta property="og:image" content="https://shots.codepen.io/username/pen/eYNBzZQ-800.jpg?version=1582297038"
-    itemprop="thumbnailUrl">
-  <meta property="og:title" content="Floating register page with bootstrap 4">
-  <meta property="og:url" content="https://codepen.io/huykhoong/details/eYNBzZQ">
-  <meta property="og:description" content="...">
-  <link rel="alternate" type="application/json+oembed"
-    href="https://codepen.io/api/oembed?url=https%3A%2F%2Fcodepen.io%2Fhuykhoong%2Fpen%2FeYNBzZQ&amp;format=json"
-    title="Floating register page with bootstrap 4">
-  <link rel="apple-touch-icon" type="image/png"
-    href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
-  <meta name="apple-mobile-web-app-title" content="CodePen">
-  <link rel="shortcut icon" type="image/x-icon"
-    href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
-  <link rel="mask-icon" type="image/x-icon"
-    href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg"
-    color="#111">
-  <style id="_goober">
-    @keyframes go2264125279 {
-      from {
-        transform: scale(0) rotate(45deg);
-        opacity: 0;
-      }
-
-      to {
-        transform: scale(1) rotate(45deg);
-        opacity: 1;
-      }
-    }
-
-    @keyframes go3020080000 {
-      from {
-        transform: scale(0);
-        opacity: 0;
-      }
-
-      to {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-
-    @keyframes go463499852 {
-      from {
-        transform: scale(0) rotate(90deg);
-        opacity: 0;
-      }
-
-      to {
-        transform: scale(1) rotate(90deg);
-        opacity: 1;
-      }
-    }
-
-    @keyframes go1268368563 {
-      from {
-        transform: rotate(0deg);
-      }
-
-      to {
-        transform: rotate(360deg);
-      }
-    }
-
-    @keyframes go1310225428 {
-      from {
-        transform: scale(0) rotate(45deg);
-        opacity: 0;
-      }
-
-      to {
-        transform: scale(1) rotate(45deg);
-        opacity: 1;
-      }
-    }
-
-    @keyframes go651618207 {
-      0% {
-        height: 0;
-        width: 0;
-        opacity: 0;
-      }
-
-      40% {
-        height: 0;
-        width: 6px;
-        opacity: 1;
-      }
-
-      100% {
-        opacity: 1;
-        height: 10px;
-      }
-    }
-
-    @keyframes go901347462 {
-      from {
-        transform: scale(0.6);
-        opacity: 0.4;
-      }
-
-      to {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-
-    .go4109123758 {
-      z-index: 9999;
-    }
-
-    .go4109123758>* {
-      pointer-events: auto;
-    }
-  </style>
+  <title>Register</title>
   <script src="https://srv.buysellads.com/ads/CESI627W.json?callback=customJSONPCallback"></script>
-
-
-
-
-
-  <title>CodePen - Floating register page with bootstrap 4</title>
-
   <link rel="canonical" href="https://codepen.io/huykhoong/pen/eYNBzZQ">
-
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 
@@ -378,7 +151,7 @@
             <!-- Background image for card set in CSS! -->
           </div>
           <div class="card-body">
-            <h5 class="card-title text-center">Register</h5>
+            <h5 class="card-title text-center font-bold">Register</h5>
             <form class="form-signin">
               <div class="form-label-group">
                 <input type="text" id="inputUserame" class="form-control" placeholder="Username" required=""
@@ -405,7 +178,6 @@
               </div>
 
               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
-              <a class="d-block text-center mt-2 small" href="https://huykhong.com">Sign In</a>
               <hr class="my-4">
               <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i
                   class="fab fa-google mr-2"></i> Sign up with Google</button>
