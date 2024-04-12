@@ -1,11 +1,25 @@
-<html lang="en" class="pc js js"><!--<![endif]-->
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+
+
+  <link rel="apple-touch-icon" type="image/png"
+    href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+  <meta name="apple-mobile-web-app-title" content="CodePen">
+
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+  <link rel="mask-icon" type="image/x-icon"
+    href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg"
+    color="#111">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="csrf-param" content="authenticity_token">
   <meta name="csrf-token"
-    content="ciA6sxyghzgUTsAQG0UsdqrI+zYywVbFpn/U/J9D3LmofMnlN2JpVGsGhnCq/ZzDhkU7/VE3mr7Q1Hi4P7oZmQ==">
+    content="re+eKV7ig1XdMln6oVVhbBuINUI5TKVA8kVZOGb5fwhTRagklf07HUmbGlKOW1VGCcfEia6gjgs+UDu3jyZKdA==">
 
   <title>Floating register page with bootstrap 4</title>
   <link rel="stylesheet" media="screen"
@@ -59,8 +73,8 @@
       font-family: Lato;
       font-style: normal;
       font-weight: 900;
-      src: url(/cf-fonts/s/lato/5.0.18/latin/900/normal.woff2);
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      src: url(/cf-fonts/s/lato/5.0.18/latin-ext/900/normal.woff2);
+      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
       font-display: swap;
     }
 
@@ -68,8 +82,8 @@
       font-family: Lato;
       font-style: normal;
       font-weight: 900;
-      src: url(/cf-fonts/s/lato/5.0.18/latin-ext/900/normal.woff2);
-      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      src: url(/cf-fonts/s/lato/5.0.18/latin/900/normal.woff2);
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
       font-display: swap;
     }
 
@@ -210,128 +224,206 @@
     }
   </style>
   <script src="https://srv.buysellads.com/ads/CESI627W.json?callback=customJSONPCallback"></script>
+
+
+
+
+
+  <title>CodePen - Floating register page with bootstrap 4</title>
+
+  <link rel="canonical" href="https://codepen.io/huykhoong/pen/eYNBzZQ">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+  <style>
+    :root {
+      --input-padding-x: 1.5rem;
+      --input-padding-y: .75rem;
+    }
+
+    body {
+      background: #17215f;
+      background: linear-gradient(to right, #17215f, #33AEFF);
+    }
+
+    .card-signin {
+      border: 0;
+      border-radius: 1rem;
+      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .card-signin .card-title {
+      margin-bottom: 2rem;
+      font-weight: 300;
+      font-size: 1.5rem;
+    }
+
+    .card-signin .card-img-left {
+      width: 45%;
+      /* Link to your background image using in the property below! */
+      background: scroll center url('https://huykhong.com/codepen/wallpaper.jpg');
+      background-size: cover;
+    }
+
+    .card-signin .card-body {
+      padding: 2rem;
+    }
+
+    .form-signin {
+      width: 100%;
+    }
+
+    .form-signin .btn {
+      font-size: 80%;
+      border-radius: 5rem;
+      letter-spacing: .1rem;
+      font-weight: bold;
+      padding: 1rem;
+      transition: all 0.2s;
+    }
+
+    .form-label-group {
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    .form-label-group input {
+      height: auto;
+      border-radius: 2rem;
+    }
+
+    .form-label-group>input,
+    .form-label-group>label {
+      padding: var(--input-padding-y) var(--input-padding-x);
+    }
+
+    .form-label-group>label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      margin-bottom: 0;
+      /* Override default `<label>` margin */
+      line-height: 1.5;
+      color: #495057;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      transition: all .1s ease-in-out;
+    }
+
+    .form-label-group input::-webkit-input-placeholder {
+      color: transparent;
+    }
+
+    .form-label-group input:-ms-input-placeholder {
+      color: transparent;
+    }
+
+    .form-label-group input::-ms-input-placeholder {
+      color: transparent;
+    }
+
+    .form-label-group input::-moz-placeholder {
+      color: transparent;
+    }
+
+    .form-label-group input::placeholder {
+      color: transparent;
+    }
+
+    .form-label-group input:not(:placeholder-shown) {
+      padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+      padding-bottom: calc(var(--input-padding-y) / 3);
+    }
+
+    .form-label-group input:not(:placeholder-shown)~label {
+      padding-top: calc(var(--input-padding-y) / 3);
+      padding-bottom: calc(var(--input-padding-y) / 3);
+      font-size: 12px;
+      color: #777;
+    }
+
+    .btn-google {
+      color: white;
+      background-color: #ea4335;
+    }
+
+    .btn-facebook {
+      color: white;
+      background-color: #3b5998;
+    }
+  </style>
+
+  <script>
+    window.console = window.console || function (t) { };
+  </script>
+
+
+
 </head>
 
-<body class="fullpage logged-in" data-new-gr-c-s-check-loaded="14.1063.0" data-gr-ext-installed=""
-  data-new-gr-c-s-loaded="14.1063.0">
-  <header id="main-header" class="main-header">
-    <div class="EditorHeader-module_root-cpo0V header-wrap HeaderWrap-module_root-PsKVw">
-      <h1 class="Logo-module_root-ojP5q" data-component="Logo" data-test-id="logo"><a href="/"
-          class="Logo-module_small-T4UEU"><svg viewBox="0 0 100 100">
-            <path
-              d="M100 34.2c-.4-2.6-3.3-4-5.3-5.3-3.6-2.4-7.1-4.7-10.7-7.1-8.5-5.7-17.1-11.4-25.6-17.1-2-1.3-4-2.7-6-4-1.4-1-3.3-1-4.8 0-5.7 3.8-11.5 7.7-17.2 11.5L5.2 29C3 30.4.1 31.8 0 34.8c-.1 3.3 0 6.7 0 10v16c0 2.9-.6 6.3 2.1 8.1 6.4 4.4 12.9 8.6 19.4 12.9 8 5.3 16 10.7 24 16 2.2 1.5 4.4 3.1 7.1 1.3 2.3-1.5 4.5-3 6.8-4.5 8.9-5.9 17.8-11.9 26.7-17.8l9.9-6.6c.6-.4 1.3-.8 1.9-1.3 1.4-1 2-2.4 2-4.1V37.3c.1-1.1.2-2.1.1-3.1 0-.1 0 .2 0 0zM54.3 12.3 88 34.8 73 44.9 54.3 32.4V12.3zm-8.6 0v20L27.1 44.8 12 34.8l33.7-22.5zM8.6 42.8 19.3 50 8.6 57.2V42.8zm37.1 44.9L12 65.2l15-10.1 18.6 12.5v20.1zM50 60.2 34.8 50 50 39.8 65.2 50 50 60.2zm4.3 27.5v-20l18.6-12.5 15 10.1-33.6 22.4zm37.1-30.5L80.7 50l10.8-7.2-.1 14.4z">
-            </path>
-          </svg><span class="screen-reader-text">CodePen Home</span></a><a href="/" class="Logo-module_large-J2pKy"><svg
-            viewBox="0 0 138 26" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round"
-            stroke-linejoin="round" title="CodePen">
-            <path
-              d="M15 8a7 7 0 1 0 0 10m7-8.7L33 2l11 7.3v7.4L33 24l-11-7.3zm0 0 11 7.4 11-7.4m0 7.4L33 9.3l-11 7.4M33 2v7.3m0 7.4V24M52 6h5a7 7 0 0 1 0 14h-5zm28 0h-9v14h9m-9-7h6m11 1h6a4 4 0 0 0 0-8h-6v14m26-14h-9v14h9m-9-7h6m11 7V6l11 14V6">
-            </path>
-          </svg><span class="screen-reader-text">CodePen Home</span></a></h1>
-      <div class="ItemTitle_root-BLXtW" data-test-id="item-title-area">
-        <div class="ItemTitle_text-t2tKF" data-view="full">
-          <div class="ItemTitle_by-typsS" data-test="AnItemBy">A Pen by<a class="ItemTitle_ownerLink-L8qgY"
-              href="/huykhoong">huykhoong </a><button data-test="follow-button" data-following="false"
-              title="Follow huykhoong"
-              class="Button-module_root-xw+9D FollowButton-module_root-Q92Q+ ItemTitle_followButton-2+Mhs follow-user-button"
-              data-size="mini" data-has-icon="true" data-color="green"><svg viewBox="0 0 132.4 132.4"
-                class="FollowButton-module_statusIcon-U62Ef">
-                <path
-                  d="M75.4 123.1V75.4h47.7c5.1 0 9.2-4.1 9.3-9.3s-4.2-9.3-9.3-9.3H75.4V9.3c0-5.1-4.1-9.2-9.3-9.3-5.2-.1-9.3 4.2-9.3 9.3V57H9.1C4 57-.1 61.1-.2 66.3c-.1 5.2 4.2 9.3 9.3 9.3h47.7v47.7c0 5.1 4.1 9.2 9.3 9.3s9.3-4.4 9.3-9.5z">
-                </path>
-              </svg> Follow</button></div>
-          <h1 class="ItemTitle_title-skUR3" id="item-title"><a href="https://codepen.io/huykhoong/pen/eYNBzZQ"
-              class="ItemTitle_titleLink-dPGjg" id="editable-title-span"
-              title="Floating register page with bootstrap 4">Floating register page with bootstrap 4</a></h1>
+<body translate="no">
+  <!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-xl-9 mx-auto">
+        <div class="card card-signin flex-row my-5">
+          <div class="card-img-left d-none d-md-flex">
+            <!-- Background image for card set in CSS! -->
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Register</h5>
+            <form class="form-signin">
+              <div class="form-label-group">
+                <input type="text" id="inputUserame" class="form-control" placeholder="Username" required=""
+                  autofocus="">
+                <label for="inputUserame">Username</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="">
+                <label for="inputEmail">Email address</label>
+              </div>
+
+              <hr>
+
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                <label for="inputPassword">Password</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password"
+                  required="">
+                <label for="inputConfirmPassword">Confirm password</label>
+              </div>
+
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
+              <a class="d-block text-center mt-2 small" href="https://huykhong.com">Sign In</a>
+              <hr class="my-4">
+              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i
+                  class="fab fa-google mr-2"></i> Sign up with Google</button>
+              <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i
+                  class="fab fa-facebook-f mr-2"></i> Sign up with Facebook</button>
+            </form>
+          </div>
         </div>
-      </div><button title="Love" data-anon="false" data-view="full" data-love-level="0" data-item="Pen"
-        data-hashid="eYNBzZQ"
-        class="Button-module_root-xw+9D EditorHeaderPen-module_loveButton-7F910 loves heart-button"><svg
-          viewBox="-2 0 105 92" class="LoveButtonIcon-module_root-3tVfn" data-love-level="0">
-          <path
-            d="M85.24 2.67C72.29-3.08 55.75 2.67 50 14.9 44.25 2 27-3.8 14.76 2.67 1.1 9.14-5.37 25 5.42 44.38 13.33 58 27 68.11 50 86.81 73.73 68.11 87.39 58 94.58 44.38c10.79-18.7 4.32-35.24-9.34-41.71Z">
-          </path>
-        </svg><span class="screen-reader-text">Love</span></button><a href="https://codepen.io/huykhoong/pen/eYNBzZQ"
-        title="View in Editor" class="Button-module_root-xw+9D EditorHeaderviewInEditorButton-module_root-dIyoN"><svg
-          viewBox="0 0 100 100" class="EditorHeaderviewInEditorButton-module_viewInEditorIcon-Y2lGW">
-          <path
-            d="M24.56 92.536 0 100l7.453-24.583c6.356-.244 17.322 10.792 17.107 17.119zM96.617 32.082l-.475.471L67.383 3.766l.472-.472c12.927-12.94 42.016 15.517 28.762 28.788zM61.64 9.516l28.758 28.785-46.303 46.345c-1.222 1.221-2.234.884-2.234.884l2.314-15.356-14.454.074.072-14.468-15.342 2.312s-.34-1.011.883-2.234L61.64 9.516z">
-          </path>
-        </svg> <span class="EditorHeaderviewInEditorButton-module_viewInEditorSpan-9oyEK">View Source
-          Code</span></a><span class="ButtonGroup-module_root-RfSlH PinButton-module_pinButtonGroup-GmhFS"><button
-          title="Pin Item" class="Button-module_root-xw+9D PinButton-module_pinButton-gXLwe"><svg viewBox="0 0 12 18">
-            <path
-              d="M1.5 7.74V1.8c-.414 0-.75-.403-.75-.9s.336-.9.75-.9h9c.414 0 .75.403.75.9s-.336.9-.75.9v5.94a7.567 7.567 0 0 1 1.274 2.55c.11.395.166.73.195.973a4.701 4.701 0 0 1 .03.387v.031l.001.01v.007s-.004-.117 0 .002c0 .497-.336.9-.75.9h-4.5v4.5c0 .497-.336.9-.75.9s-.75-.403-.75-.9v-4.5H.75c-.414 0-.75-.403-.75-.9v-.019a2.22 2.22 0 0 1 .005-.122c.004-.074.011-.173.026-.296.029-.244.085-.578.195-.973.2-.72.575-1.632 1.274-2.55Z">
-            </path>
-          </svg></button><button aria-haspopup="true" aria-expanded="false" aria-label="View Pinned Items"
-          class="Button-module_root-xw+9D ButtonWithDropdownTrigger-module_root-QUiLE"><svg
-            viewBox="-122.9 121.1 105.9 61.9"
-            class="ButtonWithDropdownTrigger-module_icon-BjxRt DropdownArrowIcon-module_icon-w0Zif">
-            <path
-              d="m-63.2 180.3 43.5-43.5c1.7-1.7 2.7-4 2.7-6.5s-1-4.8-2.7-6.5c-1.7-1.7-4-2.7-6.5-2.7s-4.8 1-6.5 2.7L-69.9 161l-37.2-37.2c-1.7-1.7-4-2.7-6.5-2.7s-4.8 1-6.5 2.6c-1.9 1.8-2.8 4.2-2.8 6.6 0 2.3.9 4.6 2.6 6.5 11.4 11.5 41 41.2 43 43.3l.2.2c3.6 3.6 10.3 3.6 13.9 0z">
-            </path>
-          </svg></button></span>
-      <nav class="DropdownControlled-module_root-3ewM0 UserMenu-module_userMenuDropdownParent-+nd1x"
-        data-direction="bottom left" data-open="false"><button class="UserMenu-module_userMenuButton-b38jZ"
-          data-test-id="user-menu-button" title="User Menu" aria-haspopup="true" aria-expanded="false">
-          <div id="sessionUserAvatar" class="UserMenu-module_sessionUserAvatar-d-j2e" data-test-id="user-avatar"></div>
-          <style>
-            #sessionUserAvatar {
-              background-image: url("https://assets.codepen.io/t-1/user-default-avatar.jpg?format=auto&version=0&width=80&height=80")
-            }
-          </style><span class="screen-reader-text">User Menu</span>
-        </button>
-        <div class="DropdownControlled-module_content-mxnG0" hidden="" role="menu" data-direction="bottom left">
-          <div class="DropdownContent-module_root-rQ0al UserMenu-module_userMenu-l8CQO" data-open="false"
-            data-test-id="user-menu">false</div>
-        </div>
-      </nav>
+      </div>
     </div>
-  </header>
-  <div class="oldie-header">
-    <a href="https://codepen.io/huykhoong/pen/eYNBzZQ?view=pen">Edit Pen</a>
   </div>
-  <div id="result-iframe-wrap" role="main">
-    <iframe id="result" src="https://codepen.io/huykhoong/fullpage/eYNBzZQ?view=fullpage"
-      sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation"
-      allow="accelerometer *; ambient-light-sensor *; camera *; display-capture *; encrypted-media *; geolocation *; gyroscope *; microphone *; midi *; payment *; vr *; web-share *; serial *; xr-spatial-tracking *"
-      allowtransparency="true" allowpaymentrequest="true" allowfullscreen="true" class="result-iframe" loading="lazy"
-      spellcheck="false"></iframe><grammarly-extension data-grammarly-shadow-root="true" class="dnXmp"
-      style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 1;"></grammarly-extension>
-  </div>
-  <div id="pen-ad"></div>
-  <textarea id="init-data"
-    style="display:none">{"__browser":{"country":"IN","device":"unknown_device","mobile":false,"name":"microsoft edge","platform":"pc","version":"123"},"__constants":{},"__CPDATA":{"domain_iframe":"https://cdpn.io","environment":"production","host":"codepen.io","iframe_allow":"accelerometer *; ambient-light-sensor *; camera *; display-capture *; encrypted-media *; geolocation *; gyroscope *; microphone *; midi *; payment *; vr *; web-share *; serial *; xr-spatial-tracking *","iframe_sandbox":"allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation"},"__graphql":{"data":{"data":{"sessionUser":{"id":"GrrPkn","name":"Kavita Dhar","title":"Kavita Dhar","avatar":"https://assets.codepen.io/t-1/user-default-avatar.jpg?format=auto&amp;version=0","currentContext":{"id":"GrrPkn","title":"Kavita Dhar","name":"Kavita Dhar","avatar":"https://assets.codepen.io/t-1/user-default-avatar.jpg?format=auto&amp;version=0","username":"Kavita-Dhar","__typename":"User"},"currentTeamId":null,"username":"Kavita-Dhar","admin":false,"anon":false,"pro":false,"verified":false,"teams":[],"__typename":"User"}}},"url":"https://codepen.io/graphql","api":"cprails"},"__user":{"anon":false,"base_url":"/Kavita-Dhar/","cohorts":[],"current_team_hashid":null,"current_team_id":0,"hashid":"GrrPkn","id":12247119,"itemType":"user","name":"Kavita Dhar","paid":false,"tier":0,"username":"Kavita-Dhar","created_at":"2024-04-06T04:48:09.600Z","email_verified":false,"collections_count":1,"collections_private_count":1,"followers_count":0,"followings_count":0,"pens_count":0,"pens_private_count":0,"projects_count":0,"projects_private_count":0},"__firebase":{"config":{"apiKey":"AIzaSyBgLAe7N_MdFpuVofMkcQLGwwhUu5tuxls","authDomain":"codepen-store-production.firebaseapp.com","databaseURL":"https://codepen-store-production.firebaseio.com","disabled":false,"projectId":"codepen-store-production"},"token":"eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczovL2lkZW50aXR5dG9vbGtpdC5nb29nbGVhcGlzLmNvbS9nb29nbGUuaWRlbnRpdHkuaWRlbnRpdHl0b29sa2l0LnYxLklkZW50aXR5VG9vbGtpdCIsImNsYWltcyI6eyJvd25lcklkIjoiR3JyUGtuIiwiYWRtaW4iOmZhbHNlfSwiZXhwIjoxNzEyOTA5Mzk3LCJpYXQiOjE3MTI5MDU3OTcsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInN1YiI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInVpZCI6IkdyclBrbiJ9.GRCDFNoVrssM0zh4bMfoXrFNO7MMxdXxN6ORZbCHBMduokwi_Ix0aDlddrhHvcHfn0GgNVBN-WrhXIOR6_vve5Gs794lqGBGUWojxJBSKowjzJuujmK84h1C3PPM2_nuBux3abPIQ6Qnrx1iPrcyRNOHb5AIBhKhrFdF7IZBXv6zd_KO-0LF6ZZHnLk8AfXZbZR60tpVE1CZeVuyG0JFGNrZJalCX_X5rrUGulK7K-3mVUA9j1ubgoSg6hTb9sZzadI8lT5dB60N75JKgQ-ZF2PnmFYUuRXX16JQdn-SqXXBR6ksrFBdF7nlkT-XUgKjkEIU3QkesnsomibGF8rM-g"},"__pay_stripe_public_key":"pk_live_2GndomDfiklqpSNQn8FrGuwZSMIMzha7DkLJqlYe7IR0ihKAlKdiHg68JJc5eVPt68rzAjzAAVXcUwjySHRCsgjQQ00gtRBUFNH","__pay_braintree_env":"production","__item":"{\"id\":43024435,\"hashid\":\"eYNBzZQ\",\"itemType\":\"pen\",\"user_id\":4141684,\"slug_hash\":\"eYNBzZQ\",\"private\":false,\"slug_hash_private\":\"a1ac006cfe9387c09c5df28af7eb0f75\"}","__profiled":{"base_url":"/huykhoong","hashid":"mXqrPx","id":4141684,"name":"huykhoong","type":"user","username":"huykhoong"},"__pageType":"full"}</textarea>
-  <div id="popup-overlay" class="overlay popup-overlay"></div>
-  <div id="modal-overlay" class="overlay modal-overlay"></div>
-  <script
-    src="https://cpwebassets.codepen.io/assets/common/everypage-b1fe1ca71dab80c49b8e5ebed21506a80cb6fe64ecaa8c6dddae5aca7b1e34d7.js"></script>
-  <script src="https://cpwebassets.codepen.io/assets/packs/js/vendor-a941744acb164873a3a8.chunk.js"></script>
-  <script src="https://cpwebassets.codepen.io/assets/packs/js/1-a684f36927c0fee809ef.chunk.js"></script>
-  <script src="https://cpwebassets.codepen.io/assets/packs/js/everypage-07914fe97f3bf2e4733e.js"></script>
-  <div id="react-messages">
-    <div class="Messages-module_container-YzpcS"
-      style="position: fixed; z-index: 9999; inset: 16px; pointer-events: none;"></div>
-  </div>
-  <div></div>
-  <script
-    src="https://cpwebassets.codepen.io/assets/editor/full/full_page_renderer-0e557a52193e870c6c772cd23c108c8eecac89b2bdd1f4fd9468517912beb9b2.js"></script>
+
+
+
+
+
 
 
 </body>
-<style>
-  @media print {
-    #simplifyJobsContainer {
-      display: none;
-    }
-  }
-</style>
-<div id="simplifyJobsContainer"
-  style="position: absolute; top: 0px; left: 0px; width: 0px; height: 0px; overflow: visible; z-index: 2147483647;">
-  <span></span></div>
-<script id="simplifyJobsPageScript"
-  src="chrome-extension://pbanhockgagggenencehbnadejlgchfc/js/pageScript.bundle.js"></script>
-<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><grammarly-popups
-  data-grammarly-shadow-root="true" class="dnXmp"></grammarly-popups>
 
 </html>
