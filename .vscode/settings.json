@@ -9,8 +9,8 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
-            "name": "root",
-            "database": "test",
+            "name": "hello",
+            "database": "register",
             "username": "root",
             "password": "1qw2"
         }

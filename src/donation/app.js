@@ -14,7 +14,6 @@ app.get('/', (req, res) => {
 
 app.post('/donate', (req, res) => {
     const { frequency, amount } = req.body;
-    // Process donation here
     res.send('Donation successful! Thank you for your support.');
 });
 

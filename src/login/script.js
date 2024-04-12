@@ -27,13 +27,3 @@ anime({
     return (l - i) * 100;
   }
 });
-
-// Importing User model
-const User = require('../models/User');
-
-// Example: Find all users
-User.findAll().then(users => {
-  console.log(users);
-}).catch(error => {
-  console.error('Error fetching users:', error);
-});
