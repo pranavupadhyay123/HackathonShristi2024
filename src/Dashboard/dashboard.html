@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div class="app-container">  
+  <div class="app-container">
     <div class="app-header">
       <div class="app-header-left">
         <span class="app-icon"></span>
@@ -20,12 +20,12 @@
           <input type="text" id="search-input" placeholder="Search..." style="width: 400px;">
           <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
             Search
-          </button>          
+          </button>
           <label><input type="checkbox" id="remote-checkbox"> Checkup</label>
           <label><input type="checkbox" id="fulltime-checkbox"> Vetenarian</label>
           <label><input type="checkbox" id="fulltime-checkbox"> organisation</label>
           <label><input type="checkbox" id="fulltime-checkbox"> Rescue</label>
-        </div>        
+        </div>
       </div>
       <div class="app-header-right">
         <button class="mode-switch" title="Switch Theme">
@@ -151,316 +151,321 @@
         </div>
         <style>
           body {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              height: 100vh;
-              margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
           }
+
           #job-list {
-              width: 100%;
-              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-              border-radius: 10px;
-              padding: 20px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
           }
+
           .card {
-              border: 1px solid #ccc;
-              padding: 10px;
-              margin-bottom: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
           }
+
           .job-title {
-              font-weight: bold;
+            font-weight: bold;
           }
+
           .job-details {
-              margin-top: 5px;
+            margin-top: 5px;
           }
+
           .apply-btn {
-              background-color: #007bff;
-              color: white;
-              padding: 5px 10px;
-              border: none;
-              cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
           }
+
           .applied {
-              background-color: #28a745;
+            background-color: #28a745;
           }
-      </style>
-  </head>
-  <body>
-      <div class="project-boxes jsGridView">
-          <div class="project-box-wrapper">
-              
-  
-            <div id="job-list">
-              <div class="card" data-title="Foster Coordinator" data-type="foster">
+        </style>
+        </head>
+
+        <body>
+          <div class="project-boxes jsGridView">
+            <div class="project-box-wrapper">
+              <div id="job-list">
+                <div class="card" data-title="Foster Coordinator" data-type="foster">
                   <div class="job-title">Foster Coordinator</div>
                   <div class="job-details">
-                      <span>Type: Foster</span><br>
-                      <span>Location: New York</span><br>
-                      <span>Experience: 3+ years</span>
+                    <span>Type: Foster</span><br>
+                    <span>Location: New York</span><br>
+                    <span>Experience: 3+ years</span>
                   </div>
                   <button class="apply-btn">Apply</button>
-              </div>
-              <div class="card" data-title="Vet Technician" data-type="vat">
+                </div>
+                <div class="card" data-title="Vet Technician" data-type="vat">
                   <div class="job-title">Vet Technician</div>
                   <div class="job-details">
-                      <span>Type: Vet Technician</span><br>
-                      <span>Location: Any</span><br>
-                      <span>Experience: 2+ years</span>
+                    <span>Type: Vet Technician</span><br>
+                    <span>Location: Any</span><br>
+                    <span>Experience: 2+ years</span>
                   </div>
                   <button class="apply-btn">Apply</button>
-              </div>
-              <div class="card" data-title="Organization Manager" data-type="organization">
+                </div>
+                <div class="card" data-title="Organization Manager" data-type="organization">
                   <div class="job-title">Organization Manager</div>
                   <div class="job-details">
-                      <span>Type: Organization Manager</span><br>
-                      <span>Location: San Francisco</span><br>
-                      <span>Experience: 5+ years</span>
+                    <span>Type: Organization Manager</span><br>
+                    <span>Location: San Francisco</span><br>
+                    <span>Experience: 5+ years</span>
                   </div>
                   <button class="apply-btn">Apply</button>
-              </div>
-              <div class="card" data-title="Rescue Coordinator" data-type="rescuer">
+                </div>
+                <div class="card" data-title="Rescue Coordinator" data-type="rescuer">
                   <div class="job-title">Rescue Coordinator</div>
                   <div class="job-details">
-                      <span>Type: Rescue Coordinator</span><br>
-                      <span>Location: Any</span><br>
-                      <span>Experience: 2+ years</span>
+                    <span>Type: Rescue Coordinator</span><br>
+                    <span>Location: Any</span><br>
+                    <span>Experience: 2+ years</span>
                   </div>
                   <button class="apply-btn">Apply</button>
-              </div>
-              <!-- Additional job cards -->
-              <div class="card" data-title="Animal Care Specialist" data-type="foster">
+                </div>
+                <!-- Additional job cards -->
+                <div class="card" data-title="Animal Care Specialist" data-type="foster">
                   <div class="job-title">Animal Care Specialist</div>
                   <div class="job-details">
-                      <span>Type: Foster</span><br>
-                      <span>Location: Los Angeles</span><br>
-                      <span>Experience: 4+ years</span>
+                    <span>Type: Foster</span><br>
+                    <span>Location: Los Angeles</span><br>
+                    <span>Experience: 4+ years</span>
                   </div>
                   <button class="apply-btn">Apply</button>
-              </div>
-              <div class="card" data-title="Veterinary Assistant" data-type="vat">
+                </div>
+                <div class="card" data-title="Veterinary Assistant" data-type="vat">
                   <div class="job-title">Veterinary Assistant</div>
                   <div class="job-details">
-                      <span>Type: Vet Technician</span><br>
-                      <span>Location: Chicago</span><br>
-                      <span>Experience: 2+ years</span>
+                    <span>Type: Vet Technician</span><br>
+                    <span>Location: Chicago</span><br>
+                    <span>Experience: 2+ years</span>
                   </div>
                   <button class="apply-btn">Apply</button>
-              </div>
-              <div class="card" data-title="Animal Welfare Officer" data-type="organization">
+                </div>
+                <div class="card" data-title="Animal Welfare Officer" data-type="organization">
                   <div class="job-title">Animal Welfare Officer</div>
                   <div class="job-details">
-                      <span>Type: Organization</span><br>
-                      <span>Location: London</span><br>
-                      <span>Experience: 3+ years</span>
+                    <span>Type: Organization</span><br>
+                    <span>Location: London</span><br>
+                    <span>Experience: 3+ years</span>
                   </div>
                   <button class="apply-btn">Apply</button>
-              </div>
-              <div class="card" data-title="Animal Rescue Volunteer" data-type="rescuer">
+                </div>
+                <div class="card" data-title="Animal Rescue Volunteer" data-type="rescuer">
                   <div class="job-title">Animal Rescue Volunteer</div>
                   <div class="job-details">
-                      <span>Type: Rescuer</span><br>
-                      <span>Location: Any</span><br>
-                      <span>Experience: Not required</span>
+                    <span>Type: Rescuer</span><br>
+                    <span>Location: Any</span><br>
+                    <span>Experience: Not required</span>
                   </div>
                   <button class="apply-btn">Apply</button>
+                </div>
               </div>
+            </div>
           </div>
-          
-          </div>          
-      </div>
-  
-      <script>
-          const searchInput = document.getElementById('search-input');
-          const remoteCheckbox = document.getElementById('remote-checkbox');
-          const fulltimeCheckbox = document.getElementById('fulltime-checkbox');
-          const jobList = document.getElementById('job-list');
-  
-          // Apply button event listener
-          function applyButtonHandler(event) {
+        </div>
+
+          <script>
+            const searchInput = document.getElementById('search-input');
+            const remoteCheckbox = document.getElementById('remote-checkbox');
+            const fulltimeCheckbox = document.getElementById('fulltime-checkbox');
+            const jobList = document.getElementById('job-list');
+
+            // Apply button event listener
+            function applyButtonHandler(event) {
               const card = event.target.closest('.card');
               if (card) {
-                  const title = card.dataset.title;
-                  card.querySelector('.apply-btn').classList.add('applied');
-                  card.querySelector('.apply-btn').disabled = true;
-                  saveAppliedJob(title);
+                const title = card.dataset.title;
+                card.querySelector('.apply-btn').classList.add('applied');
+                card.querySelector('.apply-btn').disabled = true;
+                saveAppliedJob(title);
               }
-          }
-  
-          // Save applied job to local storage
-          function saveAppliedJob(title) {
+            }
+
+            // Save applied job to local storage
+            function saveAppliedJob(title) {
               localStorage.setItem(title, 'applied');
-          }
-  
-          function filterJobs() {
+            }
+
+            function filterJobs() {
               const searchQuery = searchInput.value.toLowerCase();
               const isRemote = remoteCheckbox.checked;
               const isFulltime = fulltimeCheckbox.checked;
-  
+
               const cards = jobList.getElementsByClassName('card');
-  
+
               Array.from(cards).forEach(card => {
-                  const title = card.dataset.title.toLowerCase();
-                  const type = card.dataset.type;
-  
-                  const showCard = title.includes(searchQuery) &&
-                                  (isRemote ? type === 'remote' : true) &&
-                                  (isFulltime ? type === 'fulltime' : true);
-  
-                  card.style.display = showCard ? 'block' : 'none';
+                const title = card.dataset.title.toLowerCase();
+                const type = card.dataset.type;
+
+                const showCard = title.includes(searchQuery) &&
+                  (isRemote ? type === 'remote' : true) &&
+                  (isFulltime ? type === 'fulltime' : true);
+
+                card.style.display = showCard ? 'block' : 'none';
               });
-          }
-  
-          searchInput.addEventListener('input', filterJobs);
-          remoteCheckbox.addEventListener('change', filterJobs);
-          fulltimeCheckbox.addEventListener('change', filterJobs);
-  
-          // Apply button event delegation
-          jobList.addEventListener('click', applyButtonHandler);
-  
-          // Initial filtering
-          filterJobs();
-  
-          // Check local storage for applied jobs on page load
-          window.onload = function() {
+            }
+
+            searchInput.addEventListener('input', filterJobs);
+            remoteCheckbox.addEventListener('change', filterJobs);
+            fulltimeCheckbox.addEventListener('change', filterJobs);
+
+            // Apply button event delegation
+            jobList.addEventListener('click', applyButtonHandler);
+
+            // Initial filtering
+            filterJobs();
+
+            // Check local storage for applied jobs on page load
+            window.onload = function () {
               const cards = jobList.getElementsByClassName('card');
               Array.from(cards).forEach(card => {
-                  const title = card.dataset.title;
-                  if (localStorage.getItem(title) === 'applied') {
-                      card.querySelector('.apply-btn').classList.add('applied');
-                      card.querySelector('.apply-btn').disabled = true;
-                  }
+                const title = card.dataset.title;
+                if (localStorage.getItem(title) === 'applied') {
+                  card.querySelector('.apply-btn').classList.add('applied');
+                  card.querySelector('.apply-btn').disabled = true;
+                }
               });
-          };
-      </script>
-  </body>
-      <div class="messages-section">
-        <button class="messages-close">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="feather feather-x-circle">
-            <circle cx="12" cy="12" r="10" />
-            <line x1="15" y1="9" x2="9" y2="15" />
-            <line x1="9" y1="9" x2="15" y2="15" />
-          </svg>
-        </button>
-        <div class="projects-section-header">
-          <p>Client Messages</p>
-        </div>
-        <div class="messages">
-          <div class="message-box">
-            <img
-              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
-              alt="profile image">
-            <div class="message-content">
-              <div class="message-header">
-                <div class="name">Stephanie</div>
-                <div class="star-checkbox">
-                  <input type="checkbox" id="star-1">
-                  <label for="star-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-star">
-                      <polygon
-                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                    </svg>
-                  </label>
-                </div>
-              </div>
-              <p class="message-line">
-                I got your first assignment. It was quite good. 🥳 We can continue with the next assignment.
-              </p>
-              <p class="message-line time">
-                Dec, 12
-              </p>
-            </div>
+            };
+          </script>
+        </body>
+        <div class="messages-section">
+          <button class="messages-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-x-circle">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="15" y1="9" x2="9" y2="15" />
+              <line x1="9" y1="9" x2="15" y2="15" />
+            </svg>
+          </button>
+          <div class="projects-section-header">
+            <p>Client Messages</p>
           </div>
-          <div class="message-box">
-            <img
-              src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
-              alt="profile image">
-            <div class="message-content">
-              <div class="message-header">
-                <div class="name">Mark</div>
-                <div class="star-checkbox">
-                  <input type="checkbox" id="star-2">
-                  <label for="star-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-star">
-                      <polygon
-                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                    </svg>
-                  </label>
+          <div class="messages">
+            <div class="message-box">
+              <img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
+                alt="profile image">
+              <div class="message-content">
+                <div class="message-header">
+                  <div class="name">Stephanie</div>
+                  <div class="star-checkbox">
+                    <input type="checkbox" id="star-1">
+                    <label for="star-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-star">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                      </svg>
+                    </label>
+                  </div>
                 </div>
+                <p class="message-line">
+                  I got your first assignment. It was quite good. 🥳 We can continue with the next assignment.
+                </p>
+                <p class="message-line time">
+                  Dec, 12
+                </p>
               </div>
-              <p class="message-line">
-                Hey, can tell me about progress of project? I'm waiting for your response.
-              </p>
-              <p class="message-line time">
-                Dec, 12
-              </p>
             </div>
-          </div>
-          <div class="message-box">
-            <img
-              src="https://images.unsplash.com/photo-1543965170-4c01a586684e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDZ8fG1hbnxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
-              alt="profile image">
-            <div class="message-content">
-              <div class="message-header">
-                <div class="name">David</div>
-                <div class="star-checkbox">
-                  <input type="checkbox" id="star-3">
-                  <label for="star-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-star">
-                      <polygon
-                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                    </svg>
-                  </label>
+            <div class="message-box">
+              <img
+                src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
+                alt="profile image">
+              <div class="message-content">
+                <div class="message-header">
+                  <div class="name">Mark</div>
+                  <div class="star-checkbox">
+                    <input type="checkbox" id="star-2">
+                    <label for="star-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-star">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                      </svg>
+                    </label>
+                  </div>
                 </div>
+                <p class="message-line">
+                  Hey, can tell me about progress of project? I'm waiting for your response.
+                </p>
+                <p class="message-line time">
+                  Dec, 12
+                </p>
               </div>
-              <p class="message-line">
-                Awesome! 🤩 I like it. We can schedule a meeting for the next one.
-              </p>
-              <p class="message-line time">
-                Dec, 12
-              </p>
             </div>
-          </div>
-          <div class="message-box">
-            <img
-              src="https://images.unsplash.com/photo-1533993192821-2cce3a8267d1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fHdvbWFuJTIwbW9kZXJufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
-              alt="profile image">
-            <div class="message-content">
-              <div class="message-header">
-                <div class="name">Jessica</div>
-                <div class="star-checkbox">
-                  <input type="checkbox" id="star-4">
-                  <label for="star-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-star">
-                      <polygon
-                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                    </svg>
-                  </label>
+            <div class="message-box">
+              <img
+                src="https://images.unsplash.com/photo-1543965170-4c01a586684e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDZ8fG1hbnxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                alt="profile image">
+              <div class="message-content">
+                <div class="message-header">
+                  <div class="name">David</div>
+                  <div class="star-checkbox">
+                    <input type="checkbox" id="star-3">
+                    <label for="star-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-star">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                      </svg>
+                    </label>
+                  </div>
                 </div>
+                <p class="message-line">
+                  Awesome! 🤩 I like it. We can schedule a meeting for the next one.
+                </p>
+                <p class="message-line time">
+                  Dec, 12
+                </p>
               </div>
-              <p class="message-line">
-                I am really impressed! Can't wait to see the final result.
-              </p>
-              <p class="message-line time">
-                Dec, 11
-              </p>
+            </div>
+            <div class="message-box">
+              <img
+                src="https://images.unsplash.com/photo-1533993192821-2cce3a8267d1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fHdvbWFuJTIwbW9kZXJufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                alt="profile image">
+              <div class="message-content">
+                <div class="message-header">
+                  <div class="name">Jessica</div>
+                  <div class="star-checkbox">
+                    <input type="checkbox" id="star-4">
+                    <label for="star-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-star">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                      </svg>
+                    </label>
+                  </div>
+                </div>
+                <p class="message-line">
+                  I am really impressed! Can't wait to see the final result.
+                </p>
+                <p class="message-line time">
+                  Dec, 11
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="/Dashboard/script.js"></script>
+    <script src="/Dashboard/script.js"></script>
 </body>
 
 </html>
