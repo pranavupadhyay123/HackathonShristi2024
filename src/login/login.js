@@ -29,6 +29,10 @@ app.get("/", function(req, res) {
     res.render("login")
 });
 
+app.get("/register", (req, res) => {
+    res.render("register");
+})
+
 app.post("/", function(req, res) {
     var email = req.body.email;
     var password = req.body.password;
@@ -51,7 +55,7 @@ app.post("/", function(req, res) {
 });
 
 app.get("/welcome", function(req, res){
-    res.sendFile(__dirname + "/register/register.html");
+    res.render("register")
 });
 
 // set app port
