@@ -73,6 +73,15 @@ app.get('/images/:imageName', (req, res) => {
     res.sendFile(path.join(__dirname, 'src', 'images', imageName));
 });
 
+// Middleware
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static('public'));
+
+app.post('/donate', (req, res) => {
+    const { frequency, amount } = req.body;
+    res.send('Donation successful! Thank you for your support.');
+});
+
 // Route for handling login form submission
 app.post('/login', (req, res) => {
     const { email, password } = req.body;
