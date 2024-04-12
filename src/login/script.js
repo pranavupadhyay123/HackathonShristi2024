@@ -1,3 +1,4 @@
+const anime = require('animejs');
 
 var design = anime({
   targets: 'svg #XMLID5',
@@ -25,4 +26,14 @@ anime({
   endDelay: function (el, i, l) {
     return (l - i) * 100;
   }
+});
+
+// Importing User model
+const User = require('../models/User');
+
+// Example: Find all users
+User.findAll().then(users => {
+  console.log(users);
+}).catch(error => {
+  console.error('Error fetching users:', error);
 });
